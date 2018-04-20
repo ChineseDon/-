@@ -1,0 +1,132 @@
+body,
+ul,
+li,
+p,
+h3 {
+    padding: 0;
+    margin: 0;
+}
+
+ul li {
+    list-style: none;
+}
+
+.wraper {
+    width: 938px;
+    height: 128px;
+    border: 1px solid #666;
+}
+
+.wraper li {
+    width: 156px;
+    height: 128px;
+    float: left;
+    overflow: hidden;
+}
+
+.wraper li a {
+    display: block;
+    height: 128px;
+    width: 156px;
+    position: relative;
+    overflow: hidden;
+    text-decoration: none;
+}
+
+.wraper li a img {
+    position: absolute;
+    right: -15px;
+    bottom: 0;
+    width: 117px;
+    height: 72px;
+}
+
+.wraper info {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 136px;
+    padding: 4px 10px;
+}
+
+.wraper info h3 {
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.wraper .info p {
+    color: #868686;
+    font-size: 12px;
+    height: 22px;
+    line-height: 22px;
+    width: 136px;
+    overflow: hidden;
+}
+
+.wraper .info .price {
+    font-size: 14px;
+    font-style: italic;
+    color: #fa2a5d;
+    height: 35px;
+}
+
+.wraper .line {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 0;
+    height: 128px;
+    border: 1px dashed #cacaca;
+}
+
+.wraper .mask {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 128px;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.wraper:hover .mask {
+	background-color: rgba(0,0,0,.15);
+}
+
+
+.wraper ul * {
+	transition: all linear 0.1s; 
+}
+.wraper li.big,
+.wraper li.big a {
+    width: 314px;
+}
+
+.wraper li.big img {
+    width: 195px;
+    height: 120px;
+    right: 0;
+    bottom: 0;
+}
+
+.wraper li.big .info {
+    width: 290px;
+}
+
+.wraper li.big h3 {
+    font-size: 18px;
+}
+
+.wraper li.big p {
+    font-size: 14px;
+    width: 166px;
+}
+
+.wraper li.big p.price {
+	font-size: 16px;
+	padding: 7px;
+}
+
+.wraper li.big a:hover .mask {
+	background-color: rgba(0,0,0,0);
+}
